@@ -1,0 +1,13 @@
+<mat-drawer-container class="container" >
+  <mat-drawer mode="side" opened>
+    <mat-nav-list>
+      <mat-list-item>
+         <a matLine [routerLink]="'batch'" routerLinkActive="active">Batch Uploads</a>
+      </mat-list-item>
+      <mat-list-item>
+        <a matLine [routerLink]="'meterreads'" routerLinkActive="active">Reads</a>
+     </mat-list-item>
+    </mat-nav-list>
+  </mat-drawer>
+  <mat-drawer-content class="content"><router-outlet></router-outlet></mat-drawer-content>
+</mat-drawer-container>
